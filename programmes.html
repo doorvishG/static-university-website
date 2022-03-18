@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum University | Programmes</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asar">
+    <script src="https://kit.fontawesome.com/908c9c7c01.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div id="nav-logo">
+            <a href="index.html"><img src="images/logo-min.png" alt="University Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="main-nav"><a href="index.html">Home</a></li>
+                <li class="main-nav"><a href="programmes.html" class="active">Programmes</a></li>
+                <li class="main-nav"><a href="">Academics</a>
+                    <ul class="sub-nav">
+                        <li><a href="">School of Finance</a></li>
+                        <li><a href="">School of Medical Sciences</a></li>
+                        <li><a href="">School of Information Technology</a></li>
+                        <li><a href="">School of Hospitality & Tourism</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav"><a href="">Events</a></li>
+                <li class="main-nav"><a href="">About</a></li>
+                <li class="main-nav"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner-programmes">
+        <h1>Programmes</h1>
+        <div class="breadcrumbs">
+            <a href="index.html"><i class="fa-solid fa-house" style="color:white;padding-left: 2%;"></i></a>
+            <p style="color:white; font-weight: 500; margin-left: 5%; padding-top: 2px;">&gt;</p>
+            <a href="programmes.html">Programmes</a>
+        </div>
+    </div>
+
+    <div class="prog-nav">
+        <ul>
+            <li id="undergrad" onclick="displayProg(this.id)">Undergraduate</li>
+            <li id="postgrad" onclick="displayProg(this.id)">Postgraduate</li>
+            <li id="phd" onclick="displayProg(this.id)">PhD</li>
+            <li id="diploma" onclick="displayProg(this.id)">Diploma & Professional Development</li>
+        </ul>
+    </div>
+
+    <div class="container" id="under-disp" style="display: none;">
+        <div class="prog-cards fade-in-top">
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Management & Finance</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Accounting with Finance</a>
+                    <a href="#">BSc(Hons) Banking and Financial Services</a>
+                    <a href="#">BSc(Hons) Human Resource Management</a>
+                    <a href="#">BSc (Hons) Marketing</a>
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Medical Sciences</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Gerontology</a>
+                    <a href="#">BSc(Hons) Environmental and Public Health</a>
+                    <a href="#">BSc(Hons) in Sports Coaching</a>
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Information Technology</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Computer Science with Network Security</a>
+                    <a href="#">BSc(Hons) Software Engineering</a>
+                    <a href="#">BSc(Hons) Business Information Systems</a>
+                    <a href="#">BSc(Hons) Telecommunication Engineering</a>
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Hospitality & Tourism</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Tourism and Hospitality Management</a>
+                    <a href="#">BSc(Hons) Occupational Safety & Health Management</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="container" id="post-disp" style="display: none;">
+        <div class="prog-cards fade-in-top">
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Management & Finance</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">MSc Banking and Finance </a>
+                    <a href="#">MBA Finance and Investment</a>
+                    <a href="#">MSc Financial Risk Managment</a>
+                    
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Medical Sciences</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">MSc Mental Health</a>
+                    <a href="#">MSc Health Services Management</a>
+                    
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Information Technology</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">MSc Software Engineering</a>
+                    <a href="#">MSc Business and Enterprise Systems</a>
+                    <a href="#">MSc Multimedia Systems</a>
+                    <a href="#">MA Graphics Design</a>
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Hospitality & Tourism</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">MSc Tourism Management and Marketing</a>
+                    <a href="#">MSc Hotel Management</a>
+                    <a href="#">MSc Property and Resort Managment</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="container" id="phd-disp" style="display: none;">
+        <div class="prog-cards fade-in-top">
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Management & Finance</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Accounting with Finance</a>
+                    <a href="#">BSc(Hons) Banking and Financial Services</a>
+                    <a href="#">BSc(Hons) Human Resource Management</a>
+                    <a href="#">BSc (Hons) Marketing</a>
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Medical Sciences</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Gerontology</a>
+                    <a href="#">BSc(Hons) Environmental and Public Health</a>
+                    <a href="#">BSc(Hons) in Sports Coaching</a>
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Information Technology</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Computer Science with Network Security</a>
+                    <a href="#">BSc(Hons) Software Engineering</a>
+                    <a href="#">BSc(Hons) Business Information Systems</a>
+                    <a href="#">BSc(Hons) Telecommunication Engineering</a>
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Hospitality & Tourism</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">BSc(Hons) Tourism and Hospitality Management</a>
+                    <a href="#">BSc(Hons) Occupational Safety & Health Management</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="container" id="dip-disp" style="display: none;">
+        <div class="prog-cards fade-in-top">
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Management & Finance</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">Diploma in Procurement and Supply Management</a>
+                    <a href="#">Diploma in Financial Management</a>
+
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Medical Sciences</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">Diploma in Pharmacy Technician Studies</a>
+                    <a href="#">Diploma in Sport Coaching</a>
+
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Information Technology</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">Diploma in Emerging Technologies</a>
+ 
+                </div>
+            </article>
+            <article class="prog-card">
+                <div class="prog-card-header">
+                    <h1><span>S</span>chool of Hospitality & Tourism</h1>
+                </div>
+                <div class="prog-card-content">
+                    <a href="#">Diploma in Communication</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="images/logo-min.png" alt="University Logo">
+        <div class="footer-text">
+            <p>
+                Maecenas tempor eros massa,</p> <p>et ultricies ante vehicula vitae. Sed </p><p>condimentum efficitur arcu, a blandit lorem ullamcorper nec.</p>
+            </p>
+        </div>
+        <div class="contact-footer">
+            <h3>Contact info</h3>
+            <p><span><b>Telephone:</b></span> 333-3333</p>
+            <p><span><b>Address:</b></span> Lady Twining Street, Beau Bassin</p>
+            <p><span><b>Email:</b></span> info@umail.ac.mu</p>
+        </div>
+        <div class="about-footer">
+            <h3>About Us</h3>
+            <a href="">About</a>
+            <a href="">Academics</a>
+            <a href="">Programmes</a>
+            <a href="">Events</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="social-footer">
+            <h3>Follow Us</h3>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook fa-1x" ></i></a>
+                <a href=""><i class="fa-brands fa-youtube fa-1x" ></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-1x" ></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-msg">
+        <p>Copyright &copy;2022 All rights reserved.</p>
+    </div>
+
+    <script text="javascript">
+
+        const undergradDiv = document.getElementById("under-disp");
+        const postgradDiv = document.getElementById("post-disp");
+        const phdDiv = document.getElementById("phd-disp");
+        const dipDiv = document.getElementById("dip-disp");
+
+        function displayProg(clickedProg){
+            switch(clickedProg){
+                case "undergrad":
+                    undergradDiv.style.display="flex";
+                    postgradDiv.style.display = 'none';
+                    phdDiv.style.display = 'none';
+                    dipDiv.style.display = 'none';
+                    break;
+                case "postgrad":
+                    postgradDiv.style.display="flex";
+                    undergradDiv.style.display = 'none';
+                    phdDiv.style.display = 'none';
+                    dipDiv.style.display = 'none';
+                    break;
+                case "phd":
+                    phdDiv.style.display="flex";
+                    undergradDiv.style.display = 'none';
+                    postgradDiv.style.display = 'none';
+                    dipDiv.style.display = 'none';
+                    break;
+                default:
+                    dipDiv.style.display="flex";
+                    postgradDiv.style.display = 'none';
+                    phdDiv.style.display = 'none';
+                    undergradDiv.style.display = 'none';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
