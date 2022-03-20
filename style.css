@@ -915,7 +915,66 @@ input:focus{
     color: #0A30CA;
 }
 
-.event-content{
+.event-cards{
     border: 2px solid black;
     margin-top: 2%;
+    height: 80vh;
+}
+
+.event-card{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 15%;
+    
+}
+
+.date{
+    flex: 1 0 100px;
+    text-align: center;
+}
+
+.day{
+    font-family: "Comfortaa";
+    font-size: 2rem;
+    color: #717896;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.month-year{
+    font-family: "Comfortaa";
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #717896;
+}
+
+.event-desc{
+    margin-left: 15%;
+}
+
+.event-desc h1{
+    /* padding: 20px 5px; */
+    font-family: 'Comfortaa';
+    font-size: 1.563rem;
+    color: #17286D;
+    padding-bottom: 15px;
+}
+
+.event-desc p{
+    font-family: "Asar";
+    font-size:0.9rem;
+}
+
+.event-img img{
+    width: 75%;
+    padding-top: 1%;
+    margin-left: 16%;
+    height: 22.5vh;
+    
 }
