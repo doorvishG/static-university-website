@@ -136,7 +136,7 @@ nav li:hover .sub-nav > li{
     font-family: 'Asar';
     font-size: 0.9rem;
     cursor: pointer;
-    width: 10%;
+    width: 130px;
     padding: 4px;
     border-radius: 5px;
     display: inline-block;
@@ -156,7 +156,7 @@ nav li:hover .sub-nav > li{
     font-family: 'Asar';
     font-size: 0.9rem;
     cursor: pointer;
-    width: 10%;
+    width: 130px;
     padding: 4px;
     border-radius: 5px;
     display: inline-block;
@@ -292,7 +292,7 @@ h2{
     font-weight: 600;
     cursor: pointer;
     padding: 9px;
-    width: 12%;
+    width: 190px;
     border-radius: 5px;
     text-align: center;
     transition-duration: 0.4s;
@@ -916,7 +916,6 @@ input:focus{
 }
 
 .event-cards{
-    border: 2px solid black;
     margin-top: 2%;
     height: 80vh;
 }
@@ -929,7 +928,7 @@ input:focus{
     align-items: center;
     width: 70%;
     height: auto;
-    margin-top: 1%;
+    margin-top: 3%;
     margin-left: 15%;
     
 }
@@ -978,3 +977,23 @@ input:focus{
     height: 22.5vh;
     
 }
+
+.btn-event{
+    width: 100px;
+    padding: 2px;
+    font-family: "Asar";
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 2px solid #17286D;
+    background-color: #17286D;
+    color: #FFDE00;
+    font: bold;
+    transition-duration: 0.4s;
+}
+
+.btn-event:hover{
+    background-color: #FFDE00;
+    border: 2px solid #FFDE00;
+    color: #17286D;
+}
+
