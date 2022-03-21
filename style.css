@@ -1128,6 +1128,18 @@ section{
     flex: 1 0 40%;
     margin-right: 2%;
     margin-top: 5%;
+    position:relative;
+}
+
+.background{
+    position: absolute;
+    background-color: #21BFD5;
+    opacity: 0.9;
+    top: 4.5%;
+    right:52.5%;
+    width: 277px;
+    height: 255px;
+    z-index: -1;
 }
 
 .about-img img{
@@ -1143,6 +1155,22 @@ section:nth-child(2){
 section:nth-child(2) .about-img{
     margin-left: 12%;
     flex: 1 0 30%;
+    position: relative;
+}
+
+section:nth-child(2) .background2{
+    position: absolute;
+    background-color: #FFDE00;
+    opacity: 0.9;
+    top: 4.5%;
+    right:42%;
+    width: 277px;
+    height: 255px;
+    z-index: -1;
+}
+
+section:nth-child(2) .vertical-line{
+    border-left: 6px solid #FFDE00;
 }
 
 section:nth-child(2) .about-desc{
@@ -1151,4 +1179,19 @@ section:nth-child(2) .about-desc{
 
 section:nth-child(3){
     padding-bottom: 3%;
+}
+
+section:nth-child(3) .vertical-line{
+    border-left: 6px solid #17286D;
+}
+
+section:nth-child(3) .background3{
+    position: absolute;
+    background-color: #17286D;
+    opacity: 0.9;
+    top: 4.5%;
+    right:52.5%;
+    width: 277px;
+    height: 255px;
+    z-index: -1;
 }
