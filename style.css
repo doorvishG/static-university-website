@@ -107,7 +107,8 @@ nav li:hover .sub-nav > li{
 
 .main-img img{
     width:100%;
-    height: 800px;
+    height: 95vh;
+    background-size: 100% 100%;
     filter: brightness(.5);
 }
 
@@ -617,10 +618,10 @@ footer{
 
 .banner-programmes{
     width: 100%;
-    height: 350px;
+    height: 50vh;
     background: linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(23, 40, 109, 0.35) 0%), url('images/programmes-bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     position: relative;
 }
 
@@ -804,10 +805,10 @@ footer{
 /*Events page styles*/
 .banner-events{
     width: 100%;
-    height: 350px;
+    height: 50vh;
     background: linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(23, 40, 109, 0.35) 0%), url('images/events-bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     position: relative;
 } 
 
@@ -1046,10 +1047,10 @@ a.pagi-active{
 
 .banner{
     width: 100%;
-    height: 350px;
+    height: 50vh;
     background: linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(23, 40, 109, 0.3) 0%), url('images/about-bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     position: relative;
 } 
 
@@ -1079,4 +1080,75 @@ a.pagi-active{
     color: white;
     text-decoration: none;
     width: 50%;
+}
+
+.about-content{
+    margin-top: 2%;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-desc{
+    margin-left:12%;
+    flex: 1 0 39%;    
+}
+
+.about-desc h1{
+    font-family: "Comfortaa";
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #17286D;
+    padding-bottom: 5%;
+}
+
+.about-desc p{
+    font-family: "Asar";
+    font-size: 0.9rem;
+
+}
+
+.about-desc ul{
+    line-height: 1.7;
+    padding-left: 3%;
+    font-family: 'Asar';
+    font-size: 0.9rem;
+}
+
+.vertical-line{
+    border-left: 6px solid #21BFD5;
+    height: 125px;
+}
+
+.about-img{
+    flex: 1 0 40%;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
+.about-img img{
+    width: 277px;
+    height: 255px;
+}
+
+section:nth-child(2){
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+section:nth-child(2) .about-img{
+    margin-left: 12%;
+    flex: 1 0 30%;
+}
+
+section:nth-child(2) .about-desc{
+    flex: 1 0 42%;
+}
+
+section:nth-child(3){
+    padding-bottom: 3%;
 }
