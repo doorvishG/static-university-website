@@ -171,8 +171,8 @@ nav li:hover .sub-nav > li{
 }
 
 .focus-in-expand {
-	-webkit-animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes focus-in-expand {
@@ -917,25 +917,26 @@ input:focus{
 
 .event-cards{
     margin-top: 2%;
-    height: 80vh;
 }
 
 .event-card{
-    border: 2px solid blue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 70%;
-    height: auto;
+    height: 200px;
     margin-top: 3%;
     margin-left: 15%;
-    
+    border-radius: 5px;
+    box-shadow: 3px 5px 15px -1px rgba(0,0,0,0.1);
+
 }
 
 .date{
     flex: 1 0 100px;
     text-align: center;
+    margin-left: 3%;
 }
 
 .day{
@@ -954,7 +955,7 @@ input:focus{
 }
 
 .event-desc{
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .event-desc h1{
@@ -997,3 +998,46 @@ input:focus{
     color: #17286D;
 }
 
+.event-card a{
+    padding-left: 1%;
+    cursor: pointer;
+    color: #1591a2;
+}
+
+.event-card a:hover{
+    color: #0A30CA;
+}
+
+#more {
+    display: none;
+}
+
+.pagination {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+
+.pagination a{
+   width: 2%;
+   text-decoration: none;
+   font-family: "comfortaa";
+   color: #17286D;
+   padding: 5px 12px;
+   transition-duration: 0.4s;
+}
+
+.pagination a:hover{
+    background-color: #21BFD5;
+    color:#17286D;
+}
+
+a.pagi-active{
+    background-color: #17286D;
+    color: #FFDE00;
+    
+}
