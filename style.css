@@ -1290,7 +1290,7 @@ section:nth-child(3) .background3{
 }
 
 .contact-content .contact-details{
-    flex: 1 0 25%;
+    flex: 1 0 370px;
 }
 
 .contact-content .contact-details h2{
