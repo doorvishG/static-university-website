@@ -23,10 +23,10 @@
         </div>
         <!-- navigation link bar -->
         <nav>
-            <ul>
-                <li class="main-nav"><a href="index.html" class="active">Home</a></li>
-                <li class="main-nav"><a href="programmes.html">Programmes</a></li>
-                <li class="main-nav"><a href="">Academics</a>
+            <ul class="main-nav" id="myMainNav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="programmes.html">Programmes</a></li>
+                <li><a href="">Academics</a>
                     <ul class="sub-nav">
                         <li><a href="">School of Finance</a></li>
                         <li><a href="">School of Medical Sciences</a></li>
@@ -34,9 +34,10 @@
                         <li><a href="">School of Hospitality & Tourism</a></li>
                     </ul>
                 </li>
-                <li class="main-nav"><a href="events.html">Events</a></li>
-                <li class="main-nav"><a href="aboutus.html">About</a></li>
-                <li class="main-nav"><a href="contactus.html">Contact</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="javascript:void(0);" style="font-size: 1.8rem;" class="hamburger" onclick="displayMenu()">&#9776;</a></li>
             </ul>
         </nav>
     </header>
@@ -225,6 +226,17 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        function displayMenu(){
+            let nav = document.getElementById("myMainNav");
+            if (nav.className ==="main-nav"){
+                nav.className += "responsive";
+            } else{
+                nav.className = "main-nav";
+            }
+        }
     </script>
 </body>
 

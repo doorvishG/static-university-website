@@ -28,18 +28,22 @@ header {
     display: flex;  
 }
 
-.main-nav .active{
-    color: #1591a2;
-}
-
 #nav-logo img{
     width: 120px;
     height:120px;  
-    margin-left: 23%;
+    margin-left: 20%;
+}
+
+#nav-logo{
+    width: 60%;
 }
 
 nav{
     padding-top: 50px;
+}
+
+.main-nav .hamburger{
+    display: none;
 }
 
 .main-nav a{
@@ -51,11 +55,15 @@ nav{
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
     transition-duration: 0.4s;
 }
 
 .main-nav a:hover{
+    color: #1591a2;
+}
+
+.main-nav .active{
     color: #1591a2;
 }
 
@@ -69,7 +77,7 @@ nav li{
     width: 100%;
     position: relative;
     padding-right: 9%;
-   
+
 }
 
 nav li:hover .sub-nav > li{
@@ -82,13 +90,15 @@ nav li:hover .sub-nav > li{
 
 .sub-nav a:hover{
     background-color: #FFDE00;
-   color: #17286D;
+    color: #17286D;
 }
 
 .sub-nav li{
     display: none;
     min-width: 250px;
+    text-align: left;
     z-index: 99;
+    padding: 0;
 }
 
 .sub-nav{
@@ -103,7 +113,6 @@ nav li:hover .sub-nav > li{
     padding-left: 7px;
     padding-right: 2px;
 }
-
 
 /*----------------------------------------------*/
 /* HOME PAGE */
@@ -338,7 +347,7 @@ h2{
 }
 
 .card{
-    width: 27%;
+    max-width: 23%;
     min-height: 270px;
     background-color: #fff;
     border-radius: 10px;
@@ -419,7 +428,7 @@ footer{
 }
 
 .card-btn:hover{
-    width: 35%;
+    width: 130px;
 }
 
 .old-events{
@@ -475,7 +484,6 @@ footer{
     gap: 5px;
     justify-content: center;
     align-items: center; 
-    border: 2px solid red;   
 }
 
 .news-content input[type=email]{
@@ -528,7 +536,7 @@ footer{
 
 .footer-text  {
     padding-top: 25px;
-    width: 14%;
+    max-width: 210px;
 }
 
 .footer-text p{
@@ -1402,6 +1410,7 @@ section:nth-child(3) .background3{
     
     .card-content{
         width: 90%;
+        display: inline-block;
     }
     
     .card-content p{
@@ -1425,27 +1434,33 @@ section:nth-child(3) .background3{
 
     .newsletter{  
         top: 500px;
-        min-height: 20vh;
+        min-height: 10vh;
         width: 56%;
         left:  22%;
         background-size: 100% 100%;       
     }
     
     .newsletter h1{
-        padding-top: 2%;
+        padding-top: 3%;
         font-size: 1.5rem;
         letter-spacing: 7px;
     }
       
     .news-content{
         width:80%;
+        padding-top: 5%;
         display: flex;
         justify-content:flex-start;
         align-items: center;    
     }
 
+    .news-content p{
+        display: inline-block;
+        width: 65%;
+    }
+
     .news-content input[type=email]{
-        width: 200px;
+        width: 30%;
         padding: 6px;
     }
     
@@ -1456,4 +1471,104 @@ section:nth-child(3) .background3{
         text-align: center;
     }
 
+    .footer{
+        min-height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .footer img{
+        width: 120px;
+        height: 120px;
+        margin-left: 9%;
+        margin-top: 2%;
+    }
+    
+    .footer-text  {
+        padding-top: 25px;
+        max-width: 210px;
+    }
+    
+    .footer-text p{
+        font-family: 'Asar';
+        font-size: 0.9rem;
+        color: #17286D;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    
+    .contact-footer{
+        width: 11%;
+        min-height: 25vh;
+        border: 2px solid red;
+        margin-left: 0;
+        margin-top: 2%;
+        display: inline-block;
+    }
+    
+    .contact-footer p{
+        padding-top: 5px;
+    }
+    
+    .about-footer{
+        border: 2px solid red;
+        margin-top: 2%;
+        width: 11%;
+        min-height: 25vh;
+    }
+    
+    .about-footer h3{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-family: 'Comfortaa';
+        color: #17286D;
+    }
+    
+    .about-footer a{
+        text-decoration: none;
+        color: #17286D;
+        font-family: 'Asar';
+        font-size: 0.9rem; 
+        transition-duration: 0.4s;
+    }
+    
+    .about-footer a:hover{
+        color: #21BFD5;
+    }
+    
+    .social-footer{
+        width: 11%;
+        border: 2px solid red;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:1165px){
+    .main-nav a{
+        display: none;
+    }
+    .main-nav .hamburger{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:1165px){
+    .main-nav .responsive{
+        position: relative;
+    }
+
+    .main-nav .responsive .hamburger{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .main-nav .responsive a{
+        display: block;
+        text-align: center;
+    }
+
+    .main-nav .responsive .sub-nav{position: relative; display: block; width: 100; text-align: center;}
 }
