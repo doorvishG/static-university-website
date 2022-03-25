@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum University</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asar">
+    <script src="https://kit.fontawesome.com/908c9c7c01.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- https://www.taniarascia.com/responsive-dropdown-navigation-bar/ -->
+    <!-- https://jsonformatter.org/scss-to-css -->
+
+    <header class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logo-min.png" alt="logo"></a>
+            </div>
+        
+            <nav>
+                <div class="hamburger">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                
+                <ul>
+                    <ul class="main-nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="" class="dropdown">Academics</a>
+                            <ul class="sub-nav">
+                                <li><a href="">School of Management & Finance</a></li>
+                                <li><a href="">School of Medical Sciences</a></li>
+                                <li><a href="">School of Information Technology</a></li>
+                                <li><a href="">School of Hospitality & Tourism</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <script>
+        //menu hamburger start
+        $('#nav-toggle').on('click', function () {
+            this.classList.toggle("change");
+        })
+
+        $('#nav-toggle').click(function () {
+            $('nav ul').toggle()
+        })
+        //menu hamburger ends
+        //menu 
+        $(document).ready(function() {
+            $('li a.dropdown').click(
+                function(e) {
+                    e.preventDefault();
+                             var dropDown = $(this).parent().find("ul.sub-nav");                   
+                                dropDown.slideToggle(200);
+                                $('li a.dropdown').parent().find("ul.sub-nav").not(dropDown).slideUp(200);
+     
+                 });    
+        });
+    //menu
+    </script>
+</body>
+</html>
