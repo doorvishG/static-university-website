@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem Ipsum University</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asar">
     <script src="https://kit.fontawesome.com/908c9c7c01.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header>
-        <!-- navigation bar logo -->
-        <div id="nav-logo">
-            <a href="index.html"><img src="images/logo-min.png" alt="University Logo"></a>
+
+
+    <header class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logo-min.png" alt="logo"></a>
+            </div>
+        
+            <nav>
+                <div class="hamburger">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                
+                <ul>
+                    <ul class="main-nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="" class="dropdown">Academics</a>
+                            <ul class="sub-nav">
+                                <li><a href="">School of Management & Finance</a></li>
+                                <li><a href="">School of Medical Sciences</a></li>
+                                <li><a href="">School of Information Technology</a></li>
+                                <li><a href="">School of Hospitality & Tourism</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- navigation link bar -->
-        <nav>
-            <ul>
-                <li class="main-nav"><a href="index.html" class="active">Home</a></li>
-                <li class="main-nav"><a href="programmes.html">Programmes</a></li>
-                <li class="main-nav"><a href="">Academics</a>
-                    <ul class="sub-nav">
-                        <li><a href="">School of Finance</a></li>
-                        <li><a href="">School of Medical Sciences</a></li>
-                        <li><a href="">School of Information Technology</a></li>
-                        <li><a href="">School of Hospitality & Tourism</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav"><a href="events.html">Events</a></li>
-                <li class="main-nav"><a href="aboutus.html">About</a></li>
-                <li class="main-nav"><a href="contactus.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
     <!-- Home page section displaying main image and its contents -->
     <div class="main-img">
         <img src="images/homebg.jpg" alt="Home page image">
@@ -58,11 +66,11 @@
             <a href="#event"><button class="button2">Latest News</button></a>
         </div>
     </div>
-    
+
     <!-- Display fontawesome icons, university statistics and button linking to Programmes page -->
     <div class="statistics" id="learnmore">
 
-        <h1>Why <span>Choose</span> Us ?</h1>
+        <h1>Why <span class="underline">Choose</span> Us ?</h1>
 
         <p id="text-stat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
         </p>
@@ -100,10 +108,10 @@
 
     <!-- wave div -->
     <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-            style="height: 100%; width: 100%;">
-            <path d="M-5.98,141.60 C146.39,166.27 269.97,1.49 512.08,78.45 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #21bfd5"></path>
-        </svg>
+        style="height: 100%; width: 100%;">
+        <path d="M-5.98,141.60 C146.39,166.27 269.97,1.49 512.08,78.45 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #21bfd5"></path>
+    </svg>
     </div>
     <!-- Cards displaying latest news and events and link to events page-->
     <div class="latest-event" id="event">
@@ -165,7 +173,8 @@
         <div class="old-events">
             <a href="events.html">Older posts</a>
         </div>
-    <!-- newsletter subscription section -->
+
+        <!-- newsletter subscription section -->
         <div class="newsletter">
             <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
             <div class="news-content">
@@ -175,7 +184,7 @@
             </div>           
         </div>
     </div>
-    <!-- Homepage footer -->
+
     <footer class="footer">
         <img src="images/logo-min.png" alt="University Logo">
         <div class="footer-text">
@@ -211,21 +220,28 @@
     </div>
 
 
-    <!-- JQuery used to animate statistics counter value -->
-    
     <script>
-        $('.count').each(function () {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 7000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
+        //menu hamburger start
+        $('#nav-toggle').on('click', function () {
+            this.classList.toggle("change");
+        })
+
+        $('#nav-toggle').click(function () {
+            $('nav ul').toggle()
+        })
+        //menu hamburger ends
+        //menu 
+        $(document).ready(function() {
+            $('li a.dropdown').click(
+                function(e) {
+                    e.preventDefault();
+                             var dropDown = $(this).parent().find("ul.sub-nav");                   
+                                dropDown.slideToggle(200);
+                                $('li a.dropdown').parent().find("ul.sub-nav").not(dropDown).slideUp(200);
+     
+                 });    
         });
+    //menu
     </script>
 </body>
-
 </html>
