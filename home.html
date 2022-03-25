@@ -9,17 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem Ipsum University</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="homestyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asar">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/908c9c7c01.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- https://www.taniarascia.com/responsive-dropdown-navigation-bar/ -->
-    <!-- https://jsonformatter.org/scss-to-css -->
 
     <header class="navigation">
         <div class="nav-container">
@@ -52,7 +48,197 @@
         </div>
     </header>
 
-    
+    <!-- Home page section displaying main image and its contents -->
+    <div class="main-img">
+        <img src="images/homebg.jpg" alt="Home page image">
+        <div class="content focus-in-expand">
+            <h1>Inspiration</h1>
+            <h1>and Innovation.</h1>
+
+            <br>
+            <p>Any successful career starts with good education. Together with us </p>
+            <p>you will have a deeper knowledge of subjects that will be useful for you </p>
+            </p>when climbing the career ladder.</p>
+
+            <br><br><br>
+            <a href="#learnmore"><button class="button1">Learn More</button></a>
+
+            <a href="#event"><button class="button2">Latest News</button></a>
+        </div>
+    </div>
+
+    <!-- Display fontawesome icons, university statistics and button linking to Programmes page -->
+    <div class="statistics" id="learnmore">
+
+        <h1>Why <span class="underline">Choose</span> Us ?</h1>
+
+        <p id="text-stat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+        </p>
+        <p> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+
+        <div class="stats">
+
+            <div class="stat1">
+                <i class="fa-solid fa-graduation-cap fa-4x"></i>
+                <p><span class="count">93</span><span>%</span></p>
+                <h2>Graduate</h2>
+            </div>
+            <div class="stat2">
+                <i class="fa-solid fa-chalkboard-user fa-4x"></i>
+                <p><span class="count">30</span><span>+</span></p>
+                <h2>Certified Lecturers</h2>
+            </div>
+            <div class="stat3">
+                <i class="fa-solid fa-book-open-reader fa-4x"></i>
+                <p><span class="count">100</span><span>+</span></p>
+                <h2>Programmes</h2>
+            </div>
+            <div class="stat4">
+                <i class="fa-solid fa-users fa-4x"></i>
+                <p><span class="count">4000</span><span>+</span></p>
+                <h2>Students</h2>
+            </div>
+
+        </div>
+
+        <div class="btn-stat">
+            <a href="programmes.html"><button class="button3">View all Programmes</button></a>
+        </div>
+    </div>
+
+    <!-- wave div -->
+    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M-5.98,141.60 C146.39,166.27 269.97,1.49 512.08,78.45 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #21bfd5"></path>
+    </svg>
+    </div>
+    <!-- Cards displaying latest news and events and link to events page-->
+    <div class="latest-event" id="event">
+        <h1>Latest News</h1>
+
+        <div class="cards">
+            <article class="card">
+                <div class="card-header">
+                    <h2>Results Announcement</h2>
+                </div>
+                <div class="label com-label">
+                    <h4>Communique</h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur elit. Dui
+                        amet tortor ut tempus blandit. Lectus cras iaculis
+                        blandit ut tellus et vivamus vel.</p>
+                </div>
+                <footer>
+                    <a><button class="card-btn"><span class="text"><b>Learn More</b></span><i class="icon fa-solid fa-arrow-right-long"></i></button></a>
+                </footer>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <h2>Freshers' Party</h2>
+                </div>
+                <div class="label event-label">
+                    <h4>Event</h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur elit. Dui
+                        amet tortor ut tempus blandit. Lectus cras iaculis
+                        blandit ut tellus et vivamus vel.</p>
+                </div>
+                <footer>
+                    <a><button class="card-btn"><span class="text"><b>Learn More</b></span><i
+                                class="icon fa-solid fa-arrow-right-long"></i></button></a>
+                </footer>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <h2>Science Competition</h2>
+                </div>
+                <div class="label news-label">
+                    <h4>News</h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur elit. Dui
+                        amet tortor ut tempus blandit. Lectus cras iaculis
+                        blandit ut tellus et vivamus vel.</p>
+                </div>
+                <footer>
+                    <a><button class="card-btn"><span class="text"><b>Learn More</b></span><i
+                                class="icon fa-solid fa-arrow-right-long"></i></button></a>
+                </footer>
+            </article>
+        </div>
+        <div class="old-events">
+            <a href="events.html">Older posts</a>
+        </div>
+
+        <!-- newsletter subscription section -->
+        <div class="newsletter">
+            <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <div class="news-content">
+                <p >To receive the latest news and updates</p>
+                <input type="email" placeholder="* Enter mail address">
+                <button class="btn-newsletter"><b>Subscribe</b></button>
+            </div>           
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="images/logo-min.png" alt="University Logo">
+        <div class="footer-text">
+            <p>
+                Maecenas tempor eros massa,</p> <p>et ultricies ante vehicula vitae. Sed </p><p>condimentum efficitur arcu, a blandit lorem ullamcorper nec.</p>
+            </p>
+        </div>
+        <div class="contact-footer">
+            <h3>Contact info</h3>
+            <p><span><b>Telephone:</b></span> 333-3333</p>
+            <p><span><b>Address:</b></span> Lady Twining Street, Beau Bassin</p>
+            <p><span><b>Email:</b></span> info@umail.ac.mu</p>
+        </div>
+        <div class="about-footer">
+            <h3>About Us</h3>
+            <a href="aboutus.html">About</a>
+            <a href="">Academics</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="events.html">Events</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+        <div class="social-footer">
+            <h3>Follow Us</h3>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-facebook fa-1x" ></i></a>
+                <a href=""><i class="fa-brands fa-youtube fa-1x" ></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-1x" ></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-msg">
+        <p>Copyright &copy;2022 All rights reserved.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
         //menu hamburger start
         $('#nav-toggle').on('click', function () {
