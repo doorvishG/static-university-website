@@ -694,7 +694,6 @@ footer{
 
 @media screen and (max-width:799px){
     .footer{
-        border: 2px solid red;
         height: 90vh;
         display: flex;
         flex-wrap: wrap;
