@@ -1,14 +1,3 @@
-@font-face {
-    font-family: "Comfortaa";
-    src: url('https://fonts.googleapis.com/css?family=Comfortaa');
-}
-
-
-@font-face {
-    font-family: "Asar";
-    src: url('https://fonts.googleapis.com/css?family=Asa');
-}
-
 *{
     padding: 0;
     margin: 0;
@@ -855,6 +844,8 @@ footer{
     letter-spacing: 0.5px;
 }
 
+/*Programmes Page*/
+
 .banner-programmes{
     width: 100%;
     height: 50vh;
@@ -901,7 +892,50 @@ footer{
 }
 
 .prog-nav ul{
-    display: inline-flex;
+    display: flex;
+    padding-left: 5%;
+}
+
+
+/*For small screen*/
+@media screen and (max-width:799px) {
+    .prog-nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #undergrad{
+        margin-left: 0;
+        width: 100%;
+    }
+    #postgrad{
+        width: 100%;
+    }
+    
+    #phd{
+        width: 100%;
+    }
+    
+    #diploma{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+    }
+    .prog-cards{
+        height: 1200px;
+    }
+    
 }
 
 .prog-nav li{
@@ -916,23 +950,44 @@ footer{
     transition-duration: 0.4s;
 }
 
-#undergrad{
-    margin-left: 6%;
-    width:70%;
+/*For large screen*/
+@media screen and (min-width:799px) {
+    #undergrad{
+        margin-left: 6%;
+        width:70%;
+    }  
+    #postgrad{
+        width: 66%;
+    }
+    
+    #phd{
+        width: 50%;
+    }
+    
+    #diploma{
+        margin-right: 6%;
+        width: 100%;
+    }  
+    .container{
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 8%;
+    }
+    .prog-cards{
+        display: flex;
+        width: 80%; 
+        height: 520px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer1{
+        height: 240px;
+    }
 }
 
-#postgrad{
-    width: 66%;
-}
-
-#phd{
-    width: 50%;
-}
-
-#diploma{
-    margin-right: 6%;
-    width: 100%;
-}
 
 #undergrad:hover{
     color: #0A30CA;
@@ -948,25 +1003,6 @@ footer{
 
 #diploma:hover{    
    color:  #0A30CA;
-}
-
-.container{
-    margin-top: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 8%;
-    /* width: auto; */
-    /* height:690px; */
-}
-
-.prog-cards{
-    display: flex;
-    width: 80%; 
-    height: 520px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .prog-cards > .prog-card{
@@ -1040,6 +1076,8 @@ footer{
       opacity: 1;
     }
   }
+  
+
 
 /*Events page styles*/
 .banner-events{
