@@ -890,34 +890,45 @@ footer{
     border-image: linear-gradient(89.9deg, rgb(255,243,110,1), rgb(30,204,214,1), rgb(5,54,154,1)) 1;
 }
 
-.prog-nav ul{
-    display: flex;
-    padding-left: 5%;
-}
-
 
 /*For small screen*/
 @media screen and (max-width:799px) {
+    .prog-nav{
+        width: 100%;
+    }
     .prog-nav ul{
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: flex-start;
+        justify-content: space-around;
+        gap:15px;
+    }
+
+    .prog-nav li {
+        font-size: 1.1rem;
+        list-style: none;
+        font-family: 'Comfortaa';
+        font-weight: 600;
+        transition: 0.4s;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #undergrad{
         margin-left: 0;
-        width: 100%;
+        width: 610px;
     }
     #postgrad{
-        width: 100%;
+        width: 590px;
     }
     
     #phd{
-        width: 100%;
+        width: 260px;
     }
     
     #diploma{
         margin-right: 0;
-        width: 100%;
+        width: 1000px;
     }
 
     .container{
@@ -937,20 +948,14 @@ footer{
     
 }
 
-.prog-nav li{
-
-    padding-top: 25px;
-    padding-bottom: 20px;
-    list-style: none;
-    font-family: 'Comfortaa';
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition-duration: 0.4s;
-}
 
 /*For large screen*/
 @media screen and (min-width:799px) {
+    .prog-nav ul{
+        display: flex;
+        padding-left: 5%;
+    }
+
     #undergrad{
         margin-left: 6%;
         width:70%;
@@ -982,6 +987,19 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .prog-nav li{
+
+        padding-top: 25px;
+        padding-bottom: 20px;
+        list-style: none;
+        font-family: 'Comfortaa';
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition-duration: 0.4s;
+    }
+    
     .footer1{
         height: 240px;
     }
