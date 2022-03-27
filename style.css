@@ -1105,7 +1105,7 @@ footer{
   
 
 
-/*Events page styles*/
+/*Events page*/
 .banner-events{
     width: 100%;
     height: 50vh;
@@ -1140,6 +1140,7 @@ footer{
     font-family: 'Asar';
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .event-nav {
@@ -1152,9 +1153,62 @@ footer{
 }
 
 .events {
-    display: inline-flex;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+/*Small screen*/
+@media screen and (max-width:799px) {
+    .banner-events{
+        z-index: -1;
+    }
+
+    .event-nav{
+        width: 100%;
+    }
+
+    .events{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .event-card{
+        width: 100%;
+        
+        height: 300px;
+    }
+
+    .date{
+        margin-left:0;
+    }
+
+    .event-img img{
+        display: none;
+    }
+    .event-desc p{
+        width: 100%;
+        display: inline;
+        font-size: 1rem;
+    }
+    .btn-event{
+        margin-top: 6%;
+    }
+}
+
+/*Large screen*/
+@media screen and (min-width:799px) {
+    .event-card{
+        width: 70%;
+        margin-left: 17%;
+        height: 30vh;
+    }
+    .event-desc p{
+        font-size:0.9rem;
+    }
+}
 .events li{
     align-items: center;
     justify-content: space-around;
@@ -1168,16 +1222,6 @@ footer{
     transition-duration: 0.4s;
 }
 
-  #all{
-    flex:1 0 120px;
-    margin-left: 10%;
-}
-
-#event{
-    flex:1 0 50px;
-}
-
-
 
 .events input[type=text]{
     margin-top: -500px;
@@ -1186,10 +1230,6 @@ footer{
     border-radius: 5px;
 }
 
-input:focus{
-    outline-color: none !important;
-    border: 2px solid #FFDE00;
-}
 
 .events ::placeholder{
     font-family: 'comfortaa';
@@ -1223,22 +1263,22 @@ input:focus{
     margin-top: 2%;
 }
 
+
 .event-card{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 70%;
-    height: 200px;
+    /* width: 70%; */
+    /* height: 200px; */
     margin-top: 3%;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     border-radius: 5px;
     box-shadow: 3px 5px 15px -1px rgba(0,0,0,0.1);
 
 }
 
 .date{
-    flex: 1 0 100px;
     text-align: center;
     margin-left: 3%;
 }
@@ -1272,11 +1312,10 @@ input:focus{
 
 .event-desc p{
     font-family: "Asar";
-    font-size:0.9rem;
 }
 
 .event-img img{
-    width: 75%;
+    width: 226px;
     padding-top: 1%;
     margin-left: 16%;
     height: 22.5vh;
@@ -1294,6 +1333,7 @@ input:focus{
     color: #FFDE00;
     font: bold;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .btn-event:hover{
