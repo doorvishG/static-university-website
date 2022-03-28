@@ -1536,7 +1536,7 @@ section:nth-child(3) .background3{
     height: 255px;
     z-index: -1;
 }
-/*small screen*/
+
 @media screen and (max-width:799px) {
     .banner{
         z-index: -1;
@@ -1619,12 +1619,12 @@ section:nth-child(3) .background3{
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: 75vh;
+    height: 90vh;
 }
 
 .contact-content .contact-form{
-    flex: 1 0 700px;
-    padding-left: 10%;
+   width: 700px;
+    padding-left: 18%;
 }
 
 .contact-content .contact-form h1{
@@ -1637,9 +1637,11 @@ section:nth-child(3) .background3{
 .contact-content .contact-form p{
     font-family: "Asar";
     font-size: 0.9rem;
+    display: inline;
 }
 
 .contact-content .contact-form input[type=email]{
+    font-family: "Asar";
     margin-top: 5%;
     padding: 4px;
     width: 305px;
@@ -1648,6 +1650,7 @@ section:nth-child(3) .background3{
 }
 
 .contact-content .contact-form input[type=text]{
+    font-family: "Asar";
     margin-top: 3%;
     padding: 4px;
     width: 305px;
@@ -1656,6 +1659,7 @@ section:nth-child(3) .background3{
 }
 
 .contact-content .contact-form textarea{
+    font-family: "Asar";
     margin-top: 3%;
     width: 305px;
     border-radius: 5px; 
@@ -1673,6 +1677,7 @@ section:nth-child(3) .background3{
     width: 84px;
     height: 34px;
     display: inline-flex;
+    transition-duration: 0.4s;
 }
 
 .contact-content .contact-form .contact-btn:hover{
@@ -1681,14 +1686,18 @@ section:nth-child(3) .background3{
 }
 
 .contact-content .contact-details{
-    flex: 1 0 370px;
+    margin-right: 0;
+    height: 62vh;
+    padding: 1% 1% 1% 1%;
+    border-radius: 5px;
+    box-shadow: 8px 12px 25px 3px rgba(0,0,0,0.1);
 }
 
 .contact-content .contact-details h2{
     font-family: "Comfortaa";
     color: #17286D;
     font-weight: 600;
-    padding: 5% 0 5% 0;
+    padding: 5px 0 20px 0;
 }
 
 .contact-content .contact-details .details{
@@ -1700,6 +1709,7 @@ section:nth-child(3) .background3{
    font-size: 0.9rem;
    letter-spacing: 0.8px;
    line-height: 1.2;
+   padding-bottom: 2.3rem;
 }
 
 .contact-content .contact-details .open p{
@@ -1709,5 +1719,38 @@ section:nth-child(3) .background3{
 .details-icon {
     position: relative;
     width: 35px;
-    margin-top: -px;
+    
+}
+
+@media screen and (max-width:799px) {
+
+    .contact-content{
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .contact-content .contact-form{
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .contact-content .contact-form h1{
+        text-align: center;
+    }
+
+    .contact-content .contact-form p{
+        display: inline;
+    }
+
+    .contact-content .contact-form .contact-btn{
+        float: right;
+        margin-right: 92px;
+    }
+
+    .contact-content .contact-details{
+        width: 300px;
+        margin-left: 19%;
+    }
+
 }
