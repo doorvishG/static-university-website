@@ -62,6 +62,9 @@ nav a:not(:only-child):after {
     content: ' ▾';
 }
 
+.main-nav .active{
+    color: #1591a2;
+}
 
 /*dropdown*/
 nav ul li ul li{
