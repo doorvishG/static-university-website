@@ -6,35 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem Ipsum University | About Us</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homestyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asar">
     <script src="https://kit.fontawesome.com/908c9c7c01.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <!-- navigation bar logo -->
-        <div id="nav-logo">
-            <a href="index.html"><img src="images/logo-min.png" alt="University Logo"></a>
+    <header class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logo-min.png" alt="logo"></a>
+            </div>
+        
+            <nav>
+                <div class="hamburger">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                
+                <ul>
+                    <ul class="main-nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="" class="dropdown">Academics</a>
+                            <ul class="sub-nav">
+                                <li><a href="">School of Management & Finance</a></li>
+                                <li><a href="">School of Medical Sciences</a></li>
+                                <li><a href="">School of Information Technology</a></li>
+                                <li><a href="">School of Hospitality & Tourism</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- navigation link bar -->
-        <nav>
-            <ul>
-                <li class="main-nav"><a href="index.html">Home</a></li>
-                <li class="main-nav"><a href="programmes.html">Programmes</a></li>
-                <li class="main-nav"><a href="">Academics</a>
-                    <ul class="sub-nav">
-                        <li><a href="">School of Finance</a></li>
-                        <li><a href="">School of Medical Sciences</a></li>
-                        <li><a href="">School of Information Technology</a></li>
-                        <li><a href="">School of Hospitality & Tourism</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav"><a href="events.html">Events</a></li>
-                <li class="main-nav"><a href="aboutus.html" class="active">About</a></li>
-                <li class="main-nav"><a href="contactus.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <div class="banner">
         <h1>About Us</h1>
@@ -48,11 +56,12 @@
     <div class="about-content">
         <section>
             <div class="about-desc">
-                <h1>Our Mission</h1>
+                <h1><span class="about-underline1">Our Mission</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Leo </p>
                 <p>pulvinar pellentesque aliquam consectetur in porttitor. Maecenas </p>
                 <p>curabitur vel tincidunt tincidunt.</p>
             </div>
+            
             <div class="vertical-line"></div>
             <div class="about-img">
                 <div class="background"></div>
@@ -67,7 +76,7 @@
             </div>
             <div class="vertical-line"></div>
             <div class="about-desc">
-                <h1>Our Aim</h1>
+                <h1><span class="about-underline2">Our Aim</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
                 <p>Id tempus bibendum tellus fames eu dignissim integer.</p> 
                 <p>Commodo tortor lobortis quis lectus vel sed posuere.</p>
@@ -78,22 +87,25 @@
                     <li>Lorem sit amet, consectetur adipiscing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetu.</li>
                 </ul>
+                
             </div>
             
         </section>
 
         <section>          
             <div class="about-desc">
-                <h1>Our Vision</h1>
+                <h1><span class="about-underline3">Our Vision</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit </p> 
                 <p>consequat, enim blandit blandit sed purus habitant consequat quis.</p> 
                 <p>Lectus tincidunt vulputate pulvinar sit nisl elit cursus.</p>
             </div>
+            
             <div class="vertical-line"></div>
             <div class="about-img">
                 <div class="background3"></div>
                 <img src="images/vision.jpg" alt="">
             </div>
+
         </section>
     </div>
 
@@ -130,5 +142,28 @@
     <div class="copyright-msg">
         <p>Copyright &copy;2022 All rights reserved.</p>
     </div>
+    <script>
+        //menu hamburger start
+        $('#nav-toggle').on('click', function () {
+            this.classList.toggle("change");
+        })
+
+        $('#nav-toggle').click(function () {
+            $('nav ul').toggle()
+        })
+        //menu hamburger ends
+        //menu 
+        $(document).ready(function() {
+            $('li a.dropdown').click(
+                function(e) {
+                    e.preventDefault();
+                             var dropDown = $(this).parent().find("ul.sub-nav");                   
+                                dropDown.slideToggle(200);
+                                $('li a.dropdown').parent().find("ul.sub-nav").not(dropDown).slideUp(200);
+     
+                 });    
+        });
+    //menu
+    </script>
 </body>
 </html>
