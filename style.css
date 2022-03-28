@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -182,7 +183,7 @@ nav ul li ul li a{
    .main-img{
        z-index: -1;
    }
-	
+
    .sub-nav{
         position: static; /*To avoid that dropdown overflow on other list items*/
    }
@@ -897,14 +898,12 @@ footer{
 
 /*For small screen*/
 @media screen and (max-width:799px) {
-    .prog-nav{
-        width: 100%;
-    }
-	
     .banner-programmes{
         z-index: -1;
     }
-	
+    .prog-nav{
+        width: 100%;
+    }
     .prog-nav ul{
         display: flex;
         flex-direction: row;
@@ -1103,8 +1102,6 @@ footer{
     }
   }
   
-
-
 /*Events page*/
 .banner-events{
     width: 100%;
@@ -1434,11 +1431,12 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
 }
 
 .about-desc{
     margin-left:12%;
-    flex: 1 0 39%;    
+    width:  27%;    
 }
 
 .about-desc h1{
@@ -1467,7 +1465,7 @@ section{
 }
 
 .about-img{
-    flex: 1 0 40%;
+   width:30%;
     margin-right: 2%;
     margin-top: 5%;
     position:relative;
@@ -1478,7 +1476,7 @@ section{
     background-color: #21BFD5;
     opacity: 0.9;
     top: 4.5%;
-    right:52.5%;
+    right:42%;
     width: 277px;
     height: 255px;
     z-index: -1;
@@ -1496,7 +1494,8 @@ section:nth-child(2){
 
 section:nth-child(2) .about-img{
     margin-left: 12%;
-    flex: 1 0 30%;
+    width: 30%;
+    top: -20px;
     position: relative;
 }
 
@@ -1505,7 +1504,7 @@ section:nth-child(2) .background2{
     background-color: #FFDE00;
     opacity: 0.9;
     top: 4.5%;
-    right:42%;
+    right:32%;
     width: 277px;
     height: 255px;
     z-index: -1;
@@ -1516,7 +1515,7 @@ section:nth-child(2) .vertical-line{
 }
 
 section:nth-child(2) .about-desc{
-    flex: 1 0 42%;
+    width: 45%;
 }
 
 section:nth-child(3){
@@ -1532,10 +1531,65 @@ section:nth-child(3) .background3{
     background-color: #17286D;
     opacity: 0.9;
     top: 4.5%;
-    right:52.5%;
+    right:42%;
     width: 277px;
     height: 255px;
     z-index: -1;
+}
+/*small screen*/
+@media screen and (max-width:799px) {
+    .banner{
+        z-index: -1;
+    }
+    
+    .vertical-line{
+        display: none;
+    }
+
+    .about-img{
+        display: none;
+    }
+
+    .about-desc{
+        width: 95%;
+        text-align: center;
+        margin:auto;
+        padding-top:50px ;
+        padding-bottom: 50px;
+        position: relative;
+    }
+    
+    section:nth-child(2) .about-desc{
+        width: 95%;
+        margin: auto;
+    }
+
+    section:nth-child(2) .about-desc ul{
+        width: 95%;
+        text-align: justify;
+        margin-left: 18%;
+    }
+
+    .about-underline1 {
+        background-image: linear-gradient(180deg, transparent 65%, #21BFD5 0);
+        padding: 0 0.5em 0 0.1em;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
+    .about-underline2 {
+        background-image: linear-gradient(180deg, transparent 65%, #FFDE00 0);
+        padding: 0 0.5em 0 0.1em;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
+    .about-underline3 {
+        background-image: linear-gradient(180deg, transparent 65%, #345af1 0);
+        padding: 0 0.5em 0 0.1em;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
+
+
 }
 
 /*Contact page styles*/
