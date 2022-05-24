@@ -14,29 +14,35 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <!-- navigation bar logo -->
-        <div id="nav-logo">
-            <a href="index.html"><img src="images/logo-min.png" alt="University Logo"></a>
+    <header class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html"><img src="images/logo-min.png" alt="logo"></a>
+            </div>
+        
+            <nav>
+                <div class="hamburger">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                
+                <ul>
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programmes.html">Programmes</a></li>
+                        <li><a href="" class="dropdown">Academics</a>
+                            <ul class="sub-nav">
+                                <li><a href="">School of Management & Finance</a></li>
+                                <li><a href="">School of Medical Sciences</a></li>
+                                <li><a href="">School of Information Technology</a></li>
+                                <li><a href="">School of Hospitality & Tourism</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contactus.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- navigation link bar -->
-        <nav>
-            <ul>
-                <li class="main-nav"><a href="index.html">Home</a></li>
-                <li class="main-nav"><a href="programmes.html">Programmes</a></li>
-                <li class="main-nav"><a href="">Academics</a>
-                    <ul class="sub-nav">
-                        <li><a href="">School of Finance</a></li>
-                        <li><a href="">School of Medical Sciences</a></li>
-                        <li><a href="">School of Information Technology</a></li>
-                        <li><a href="">School of Hospitality & Tourism</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav"><a href="events.html">Events</a></li>
-                <li class="main-nav"><a href="aboutus.html">About</a></li>
-                <li class="main-nav"><a href="contactus.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <div class="banner">
         <h1>Contact Us</h1>
